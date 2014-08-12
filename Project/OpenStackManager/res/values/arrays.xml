@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="featuresTitles">
+	    <item>Overview</item>
+	    <item>Instances</item>
+	    <item >Volumes</item>
+	    <item >Images</item>
+	</string-array>
+</resources>

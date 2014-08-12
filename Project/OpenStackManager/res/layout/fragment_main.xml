@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/table_background">
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.10"
+        android:paddingLeft="10dp"
+        android:text="@string/profiles"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:gravity="left|center"
+        android:background="@drawable/title_table_background"/>
+    
+    <ListView
+        android:id="@+id/lsV_profiles" 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+        
+    </ListView>
+    
+    
+</LinearLayout>
+    

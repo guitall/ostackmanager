@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp" >
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:text="@string/limitSumnary"/>
+
+            <ProgressBar
+                android:id="@+id/pgB_loadOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <!-- Chart Group 1 -->
+
+            <LinearLayout
+                android:id="@+id/ln_chartGroup1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <!-- Instance Chart -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/instancesChart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="@string/instances" />
+
+                    <TextView
+                        android:id="@+id/txV_instanceLimits"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="used 1 of 10" />
+                </LinearLayout>
+
+                <!-- CPU chart -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/VCPUsChart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="@string/vcpus" />
+
+                    <TextView
+                        android:id="@+id/txV_vcpuLimits"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="used 1 of 10" />
+                </LinearLayout>
+            </LinearLayout>
+            
+             <!-- Chart Group 2 -->
+
+            <LinearLayout
+                android:id="@+id/ln_chartGroup2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <!-- RAM Chart -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/ramChart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="@string/ram" />
+
+                    <TextView
+                        android:id="@+id/txV_ramLimits"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="used 1 of 10" />
+                </LinearLayout>
+
+                <!-- Floating IPs chart -->
+				<LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/floatingIPsChart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="@string/floatingIps" />
+
+                    <TextView
+                        android:id="@+id/txV_floatingIPsLimits"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="used 1 of 10" />
+                </LinearLayout>
+            </LinearLayout>
+            
+             <!-- Chart Group 3 -->
+
+            <LinearLayout
+                android:id="@+id/ln_chartGroup3"
+                android:baselineAligned="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Security Group Chart -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/securityGroupsChart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="@string/SecurityGroups" />
+
+                    <TextView
+                        android:id="@+id/txV_securityGroupsLimits"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="used 1 of 10" />
+                </LinearLayout>
+
+                <!-- Volumes chart -->
+				<LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/volumesChart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="@string/volumes" />
+
+                    <TextView
+                        android:id="@+id/txV_volumesLimits"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="used 1 of 10" />
+                </LinearLayout>
+            </LinearLayout>
+            
+             <!-- Chart Group 4 -->
+
+            <LinearLayout
+                android:id="@+id/ln_chartGroup4"
+                android:baselineAligned="false"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- Volume Storage Chart -->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <FrameLayout
+                        android:id="@+id/volumeStoragesChart"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp" >
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:text="@string/volumeStorage" />
+
+                    <TextView
+                        android:id="@+id/txV_volumeStorageLimits"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="used 1 of 10" />
+                </LinearLayout>
+
+                <!-- Empty chart -->
+				<LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                   
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

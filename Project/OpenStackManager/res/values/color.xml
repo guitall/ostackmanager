@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="maroon">#800000</color>
+    <color name="backgroundTable">#CCCCFF</color>
+    
+    <color name="orange">#F48C45</color>
+    <color name="pageBackgorund">#D8DEE3</color>
+    <color name="blockBackgorund">#EBEFF4</color>
+    <color name="blockBorder">#CCCCCC</color>
+	<color name="actionBlock">#808080</color>    
+    <color name="defaultTextColor">#666666</color>
+    <color name="titleTextColor">#333333</color>
+    <color name="secondaryTextColor">#999999</color>
+    <color name="selectedItemBackgorund">#61C9F2</color>
+    <color name="selectedItemBorder">#57BBE5</color>
+    <color name="activeButtonGreen">#7BDFBC</color>
+    <color name="warningRed">#F93A55</color>
+</resources>
